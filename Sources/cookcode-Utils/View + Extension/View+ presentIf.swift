@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension View {
+public extension View {
     @ViewBuilder
     func presentIf(_ isPresented: Bool) -> some View {
         if isPresented {

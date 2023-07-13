@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     static func createRandomString(length: Int) -> String {
         let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
         return String(
@@ -17,7 +17,7 @@ extension String {
     }
 }
 
-extension String {
+public extension String {
     func substring(from: Int, to: Int) -> String {
         guard from < count, to >= 0, to - from >= 0 else {
             return ""
